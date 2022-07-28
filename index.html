@@ -9,6 +9,9 @@
     <title>Google Play Transactional Email Rebuild</title>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
       body {
         color: #555;
       }
@@ -29,6 +32,7 @@
         /* color: #e8fbfa; */
         font-size: 16px;
       }
+
       .content {
         line-height: 20px;
         font-size: 15px;
@@ -36,7 +40,11 @@
 
       .thank-you {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+      }
 
+      .item-price {
+        font-family: "Roboto", sans-serif;
       }
 
       @media screen and (max-width: 599.98px) {
@@ -109,7 +117,14 @@
     <![endif]-->
   </head>
   <body
-    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1; color: #555; line-height: 21px;"
+    style="
+      margin: 0;
+      padding: 0;
+      min-width: 100%;
+      background-color: #dde0e1;
+      color: #555;
+      line-height: 21px;
+    "
   >
     <!--[if (gte mso 9)|(IE)]>
       <style type="text/css">
@@ -210,10 +225,64 @@
               <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
                   <td class="thank-you">
-                    <h2 style="font-size: 30px; font-weight: 400;">Thank you</h2>
-                    <p>Your subscription from Google on Google Play continues and you've been charged. <a href="http://google.com" target="_blank" rel="noopener noreferrer">Manage your subscriptions.</a> 
+                    <h2 style="font-size: 30px; font-weight: 400">Thank you</h2>
+                    <p>
+                      Your subscription from Google on Google Play continues and
+                      you've been charged.
+                      <a
+                        href="http://google.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Manage your subscriptions.</a
+                      >
                     </p>
-                    <p style="padding-top: 10px;"> <strong> Order number:</strong> SOP.7353-6482-0910-96743..8
+                    <p style="padding-top: 10px; margin: 0">
+                      <strong> Order number:</strong>
+                      SOP.7353-6482-0910-96743..8
+                    </p>
+                    <p style="margin: 0">
+                      <strong>Order date: </strong>Jul 17, 2022 5:33:07 PM EDT
+                    </p>
+                    <p style="margin: 0">
+                      <strong>Your account: </strong>
+                      <a style="text-decoration: underline" href="#"
+                        >JaredGrahamDev@protonmail.com</a
+                      >
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- END Thank you section -->
+
+          <!-- START Item Price section -->
+
+          <tr>
+            <td style="padding-top: 15px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="item-price"
+                    style="padding: 0; font-size: 0; text-align: left"
+                  >
+                    <p style="text-align: left; margin-bottom: 5px">
+                      <strong>Item</strong>
+                    </p>
+                  </td>
+
+                  <td
+                    class="item-price"
+                    style="
+                      padding: 0;
+                      font-size: 0;
+                      text-align: right;
+                      margin: 0;
+                    "
+                  >
+                    <p style="text-align: right; margin-bottom: 5px">
+                      <strong>Price</strong>
                     </p>
                   </td>
                 </tr>
@@ -223,7 +292,83 @@
             </td>
           </tr>
 
-          <!-- END Thank you section -->
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="item-price"
+                    style="padding: 0; font-size: 0; text-align: left"
+                  >
+                    <p style="text-align: left; margin-top: 15px">
+                      100 GB (Google One) (by Google LLC)
+                    </p>
+                    <p style="margin-top: -10px">Auto-renewing subscription</p>
+                  </td>
+
+                  <td
+                    class="item-price"
+                    style="padding: 0; font-size: 0; text-align: right"
+                  >
+                    <p style="text-align: right; margin-top: -10px">
+                      $1.99/month
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="border-bottom: 1px solid #ededed"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="item-price"
+                    style="padding: 0; font-size: 0; text-align: right"
+                  >
+                    <p style="text-align: right; margin-top: 15px">
+                      Tax: $0.00
+                    </p>
+                    <p style="margin-top: -10px">Total: $1.99/month</p>
+                  </td>
+                </tr>
+              </table>
+              <div style="border-bottom: 1px solid #ededed"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="item-price"
+                    style="padding: 0; font-size: 0; text-align: left"
+                  >
+                    <p style="text-align: left; margin-top: 15px">
+                      <strong>Payment method:</strong>
+                    </p>
+                  </td>
+
+                  <td
+                    class="item-price"
+                    style="padding: 0; font-size: 0; text-align: right"
+                  >
+                    <p style="text-align: right;">
+                      Visa-7770
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="border-bottom: 1px solid #ededed"></div>
+            </td>
+          </tr>
+
+          <!-- END Item Price section -->
         </table>
 
         <!--[if (gte mso 9)|(IE)]>
