@@ -9,6 +9,9 @@
     <title>Google Play Transactional Email Rebuild</title>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      body {
+        color: #555;
+      }
       table {
         border-spacing: 0;
       }
@@ -23,12 +26,17 @@
       }
       a {
         text-decoration: none;
-        color: #e8fbfa;
+        /* color: #e8fbfa; */
         font-size: 16px;
       }
       .content {
         line-height: 20px;
         font-size: 15px;
+      }
+
+      .thank-you {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
       }
 
       @media screen and (max-width: 599.98px) {
@@ -101,7 +109,7 @@
     <![endif]-->
   </head>
   <body
-    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1; color: #555; line-height: 21px;"
   >
     <!--[if (gte mso 9)|(IE)]>
       <style type="text/css">
@@ -164,7 +172,7 @@
             border-spacing: 0;
             color: #565656;
             font-family: 'Lato', sans-serif, Arial, Helvetica;
-            background-color: #fafdfe;
+            background-color: #f5f8fa;
             margin: 0;
             /* padding: 0; */
             width: 100%;
@@ -190,18 +198,32 @@
                 </tr>
               </table>
 
-              <div style="border-bottom: 1px solid #ededed;"></div>
-              
+              <div style="border-bottom: 1px solid #ededed"></div>
             </td>
           </tr>
 
-         
-
           <!-- END FIRST TABLE ROW -->
+
+          <!-- START Thank you section -->
           <tr>
-            <td>
-                <h2>Thank you</h2></td>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="thank-you">
+                    <h2 style="font-size: 30px; font-weight: 400;">Thank you</h2>
+                    <p>Your subscription from Google on Google Play continues and you've been charged. <a href="http://google.com" target="_blank" rel="noopener noreferrer">Manage your subscriptions.</a> 
+                    </p>
+                    <p style="padding-top: 10px;"> <strong> Order number:</strong> SOP.7353-6482-0910-96743..8
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="border-bottom: 1px solid #ededed"></div>
+            </td>
           </tr>
+
+          <!-- END Thank you section -->
         </table>
 
         <!--[if (gte mso 9)|(IE)]>
